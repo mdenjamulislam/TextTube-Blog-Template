@@ -1,0 +1,486 @@
+/*-----------------------------------------------|
+    Theme name: Enjam Blog Template
+    Author: MD Enjamul Islam
+    Author URI: 
+    Version: 1.0.0
+|-----------------------------------------------*/
+
+/*-----------------------------------------------|
+    [ Section table ]
+
+    1. Google font
+    2. Body
+    3. Common css
+    4. Header
+    5. Banner area
+    6. Main-content
+        6.1. post-list
+|-----------------------------------------------*/
+
+body {
+    font-family: cursive;
+    font-size: 16px;
+    font-weight: 400;
+    color: #404040;
+    overflow-x: hidden;
+}
+
+/*-----------------------------------------------|
+    3. Common css
+|-----------------------------------------------*/
+html {
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+    color: #404040;
+}
+a:hover {
+    text-decoration: none;
+}
+p {
+    color: #5f5f5f;
+}
+ol, ul {}
+li {
+    list-style: none;
+}
+.btn-read {}
+.btn-read a {
+    font-size: 18px;
+    color: #ff3333;
+}
+.btn-read a:hover {
+    color: #FF0000;
+}
+
+/*-----------------------------------------------|
+    4. Header area
+|-----------------------------------------------*/
+
+#header {}
+.header {
+    background-color: #ff2222;
+    display: block;
+    overflow: hidden;
+    transition: backgrouind 0.5s ease-in-out;
+}
+.logo h2 {
+    font-style: italic;
+    font-size: 30px;
+    color: #fff;
+}
+.logo span {
+    color: #04b692;
+}
+.header .navbar {
+    padding: 10px 0;
+}
+.navbar .nav-item .nav-link {
+    color: #d6d6d3;
+}
+.navbar .nav-item .nav-link:hover {
+    color: #fff;
+}
+
+
+/*-----------------------------------------------|
+    5. Bannre area 
+|-----------------------------------------------*/
+
+#banner {}
+.banner {
+    margin-top: 100px;
+}
+
+#banner .banner-image {
+    width: 100%;
+    height: 300px;
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.banner-content {}
+.banner-content .title-text {}
+.banner-content .title-text > h2 {
+    color: #440044;
+    font-size: 35px;
+    font-weight: bold;
+}
+.banner-content .title-text > h2 a {
+    color: #404040;
+}
+.banner-content .title-text > h2 > a:hover {
+    color: #FE6162;
+}
+.banner-content .banner-text {}
+.banner-content .banner-text > p {}
+.banner-content .btn-read {}
+.banner-content .btn-read > a {}
+.banner-content .btn-read > a:hover {
+    color: #FF0000;
+}
+
+
+
+/*-----------------------------------------------|
+    6. Main-content
+|-----------------------------------------------*/
+
+#main-content {}
+.main-content {}
+.post-list-wrap {
+    position: relative;
+}
+.post-list-wrap::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: #dddddd;
+    top: auto;
+    left: 50px;
+}
+
+.post-list {
+    position: relative;
+    padding: 20px 20px 20px 50px;
+    margin-top: 30px;
+    margin-left: 120px;
+    border: 1px solid #faf6f6;
+    border-radius: 10px;
+
+    transition: all .3s ease-in-out;
+}
+.post-list:hover {
+    box-shadow: 0px 5px 12px 0px #888;
+}
+.post-list::before {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    align-content: center;
+    font-size: 30px;
+    left: -95px;
+}
+.post-list:nth-child(1)::before {
+    content: "1";
+    background-color: #FF0000;
+}
+.post-list:nth-child(2)::before {
+    content: "2";
+    background-color: #FFCD43;
+}
+.post-list:nth-child(3)::before {
+    content: "3";
+    background-color: #17A05D;
+}
+.post-list:nth-child(4)::before {
+    content: "4";
+    background-color: #1368AA;
+}
+.post-list:nth-child(5)::before {
+    content: "5";
+    background-color: #D84F25;
+}
+.post-list:nth-child(6)::before {
+    content: "6";
+    background-color: #0781D7;
+}
+.post-list:nth-child(7)::before {
+    content: "7";
+    background-color: #474747;
+}
+.post-list:nth-child(8)::before {
+    content: "8";
+    background-color: #FF9800;
+}
+.post-list:nth-child(9)::before {
+    content: "9";
+    background-color: #0864B5;
+}
+.post-list:nth-child(10)::before {
+    content: "10";
+    background-color: #CC8540;
+}
+.post-list .post-feature {
+    margin: 15px 0 15px;
+}
+.post-list .post-feature > img {
+    width: 100%;
+    height: auto;
+}
+.post-date {
+    padding: 15px 0;
+}
+.post-date > small {
+    font-size: 18px;
+    color: #404040;
+}
+.post-title {}
+.post-title > h4 {}
+.post-title a:hover {
+    color: #FF0000;
+}
+.post-list .post-content {
+    margin-top: 20px;
+}
+.post-list .post-content > p {
+    font-size: 16px;
+}
+.post-list .btn-read {
+    margin-bottom: 15px;
+}
+
+
+/* pagination-wrap */
+
+.pagination-wrap {
+    padding: 15px 0;
+}
+.more-page {
+    width: auto;
+    display: inline-block;
+}
+.page-item.active .page-link{
+    background-color: #ff0000;
+    color: #fff;
+}
+.pagination-wrap a.page-link {
+    color: #ff0000;
+}
+/*-----------------------------------------------|
+    7. Footer
+|-----------------------------------------------*/
+
+#footer {}
+.footer {}
+.footer-bg {
+    background-color: #333;
+}
+
+
+/* footer logo */
+.footer-logo {
+    text-align: center;
+    padding: 50px 0;
+}
+.footer-logo h2 {
+    color: #222222;
+    border-bottom: 2px solid #ff2222;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+/* footer-widget */
+.footer-widget {
+    margin-bottom: 30px;
+}
+.footer-widget .widget-title {
+    margin: 20px 0 30px;
+}
+.footer-widget .widget-title > h3 {
+    color: #111111;
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+}
+.footer-widget .widget-cont {
+    margin-bottom: 20px;
+}
+.footer-widget .widget-cont > p {}
+
+.footer-widget .widget-cont .widget-link {}
+.footer-widget .widget-cont .widget-link ul {
+    padding: 0;
+}
+.footer-widget .widget-cont .widget-link ul li {
+    margin: 10px 0;
+}
+.footer-widget .widget-cont .widget-link ul li a:hover {
+    color: #ff2222;
+}
+.footer-widget .widget-cont .widget-link ul li i {
+    font-size: 16px;
+}
+
+
+.footer-widget .widget-cont .recent-post ul li span {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #222222;
+}
+.footer-widget .widget-cont .recent-post ul li span:hover {
+    color: #ff2222;
+}
+
+
+
+.footer-widget .widget-cont button {
+    border: none;
+    background-color: #ff2222;
+    color: #fff;
+    border-radius: 5px;
+    transition: all .2s ease-in-out;
+}
+.footer-widget .widget-cont button:hover {
+    background-color: #ff0800;
+}
+
+
+/*-----------------------------------------------|
+     Social link
+|-----------------------------------------------*/
+
+.social-link {}
+.social-link > ul {
+    padding: 0;
+}
+.social-link > ul > li {
+    float: left;
+    margin: 0 5px;
+}
+.social-link > ul > li > a {}
+.social-link > ul > li i {
+    font-size: 20px;
+}
+.social-link > ul > li i:hover {
+    color: #ff0000;
+}
+
+/*-----------------------------------------------|
+    Single-post
+|-----------------------------------------------*/
+
+#single-post {}
+.single-post {}
+
+#single-post .post-feature {}
+#single-post .post-feature > img {
+    width: 100%;
+    height: auto;
+}
+#single-post .post-date {
+    margin-top: 15px;
+}
+#single-post .post-title {
+    margin: 15px 0;
+}
+#single-post .post-title > h4 {
+    font-size: 35px;
+}
+#single-post .post-content {
+    padding: 15px;
+    text-align: left;
+}
+#single-post .post-content > p {
+    font-size: 16px;
+}
+
+
+
+/*-----------------------------------------------|
+    About us
+|-----------------------------------------------*/
+
+.page-header {
+    padding-top: 100px !important;
+}
+.page-header img.author-pic {}
+.page-header .single-author {
+
+}
+.page-header .single-author .title {
+    text-align: center;
+}
+.page-header .single-author .title h2, .title h2 {
+    font-size: 45px;
+    font-weight: bold;
+    color: #222222;
+    margin: 20px 0;
+}
+.page-header .single-author .about-text {}
+.page-header .single-author .about-text p {}
+
+
+
+
+/*-----------------------------------------------|
+    Contact
+|-----------------------------------------------*/
+.contact-title {
+    text-align: center;
+    text-rendering: optimizeLegibility;
+}
+.google-map {}
+.google-map iframe {}
+
+.contact-info {}
+.contact-details {
+    padding: 5px;
+    text-align: center;
+}
+.contact-details .icon {}
+.contact-details .icon i {
+    font-size: 20px;
+    color: #222222;
+    margin-bottom: 10px;
+}
+.contact-details .c-details-text {}
+.contact-details .c-details-text h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0 15px;
+}
+.contact-details .c-details-text a {
+    font-size: 16px;
+    color: #222222;
+    margin-top: 10px;
+}
+.contact-details .c-details-text p {
+    margin-top: 10px;
+}
+
+.contact-form {}
+.contact-form .contact-form-heading {}
+.contact-form .contact-form-heading h4 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+input:active, input:focus {
+    border: 0px solid #fff;
+}
+.contact-form .form-group input.form-control {}
+.contact-form .form-group input.form-control:active,
+.contact-form .form-group input.form-control:focus {
+    border: none;
+    border-width: 0;
+    border-color: none;;
+    background-color: #dddddd;
+}
+.contact-form textarea {
+    width: 100%;
+    height: 150px;
+}
+
+
+
+
+
+
+
+
+/*-----------------------------------------------|
+    
+|-----------------------------------------------*/
+
+/*-----------------------------------------------|
+    
+|-----------------------------------------------*/
